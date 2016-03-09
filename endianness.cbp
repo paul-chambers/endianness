@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="endianness" />
+		<Option platforms="Unix;" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="x86">
+				<Option platforms="Unix;" />
+				<Option output="bin/endianness" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="ppc">
+				<Option platforms="Unix;" />
+				<Option output="ppc/endianness" prefix_auto="1" extension_auto="1" />
+				<Option object_output=".objs.ppc/" />
+				<Option type="1" />
+				<Option compiler="ppc-gcc" />
+				<Compiler>
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wextra" />
+			<Add option="-Wall" />
+			<Add option="-std=c99" />
+		</Compiler>
+		<Unit filename="endianness.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

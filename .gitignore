@@ -30,3 +30,11 @@
 
 # Debug files
 *.dSYM/
+
+*.depend
+*.layout
+
+bin/
+obj/
+x86/
+ppc/
